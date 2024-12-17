@@ -9,21 +9,32 @@
 		<style>
 			#main {							
 				width: 100%;
-				height: 100%;
+				height: 1400px;
 				min-width: 500px;
 				z-index: -10;
 				zoom: 1;				
-				background-image: url("res/121212.png");
-				background-repeat:no-repeat;
+				background-image: url("res/131313.png");
+				background-repeat: repeat-y;
                 background-size:cover;
 				background-position: 0 0;
+				color: white;
 			}
-			
+			.question {
+			            font-size: 1.3em; 
+			            margin-bottom: 10px;
+			        }
 			.image1{
 			        text-align:center;
 			        width: 190px; 
 					height: 190px;
 			        }
+		    #scoreImage img {
+		        transition: transform 0.3s ease; 
+		    }
+		     
+		    #scoreImage img:hover {
+		        transform: scale(1.2); 
+		    }
 		</style>
 		<link rel="stylesheet" href="css/main.css" type="text/css">
 
@@ -37,46 +48,46 @@
     		<div class="menu">
     			<a href="https://www.bilibili.com">返回首页</a>
     		</div>
-			问题1：
-				<input type="radio" name="answer1" value="A" />A 内容
-				<input type="radio" name="answer1" value="B" />B 内容
-				<input type="radio" name="answer1" value="C"/>C 内容
-				<input type="radio" name="answer1" value="D"/>D 内容<br /><br />
-			问题2：
-				<input type="radio" name="answer2" value="A"/>A 内容
-				<input type="radio" name="answer2" value="B"/>B 内容
-				<input type="radio" name="answer2" value="C"/>C 内容
-				<input type="radio" name="answer2" value="D"/>D 内容<br /><br />
-			问题3：
-				<input type="radio" name="answer3" value="A"/>A 内容
-				<input type="radio" name="answer3" value="B"/>B 内容
-				<input type="radio" name="answer3" value="C"/>C 内容
-				<input type="radio" name="answer3" value="D"/>D 内容<br /><br />
-			问题4：
-				<input type="radio" name="answer4" value="A"/>A 内容
-				<input type="radio" name="answer4" value="B"/>B 内容
-				<input type="radio" name="answer4" value="C"/>C 内容
-				<input type="radio" name="answer4" value="D"/>D 内容<br /><br />
-			问题5：
-				<input type="radio" name="answer5" value="A"/>A 内容
-				<input type="radio" name="answer5" value="B"/>B 内容
-				<input type="radio" name="answer5" value="C"/>C 内容
-				<input type="radio" name="answer5" value="D"/>D 内容<br /><br />
-			问题6：
-				<input type="radio" name="answer6" value="A"/>A 内容
-				<input type="radio" name="answer6" value="B"/>B 内容
-				<input type="radio" name="answer6" value="C"/>C 内容
-				<input type="radio" name="answer6" value="D"/>D 内容<br /><br />
-			问题7：
-				<input type="radio" name="answer7" value="A"/>A 内容
-				<input type="radio" name="answer7" value="B"/>B 内容
-				<input type="radio" name="answer7" value="C"/>C 内容
-				<input type="radio" name="answer7" value="D"/>D 内容<br /><br />
-			问题8：
-				<input type="radio" name="answer8" value="A"/>A 内容
-				<input type="radio" name="answer8" value="B"/>B 内容
-				<input type="radio" name="answer8" value="C"/>C 内容
-				<input type="radio" name="answer8" value="D"/>D 内容<br /><br />
+			<h2 class="question">1.丝绸之路最初是由哪个朝代开辟的？：</h2><br />
+				<input type="radio" name="answer1" value="A"/>A. 秦朝
+				<input type="radio" name="answer1" value="B"/>B. 汉朝
+				<input type="radio" name="answer1" value="C"/>C. 唐朝
+				<input type="radio" name="answer1" value="D"/>D. 宋朝<br /><br />
+			<h2 class="question">2.丝绸之路的主要功能是什么？：</h2><br />
+				<input type="radio" name="answer2" value="A"/>A. 传播佛教
+				<input type="radio" name="answer2" value="B"/>B. 贸易和文化交流
+				<input type="radio" name="answer2" value="C"/>C. 军事征服
+				<input type="radio" name="answer2" value="D"/>D. 政治联盟<br /><br />
+			<h2 class="question">3.下列哪个城市不是古代丝绸之路上的重要节点？：</h2><br />
+				<input type="radio" name="answer3" value="A"/>A. 长安（今西安）
+				<input type="radio" name="answer3" value="B"/>B. 洛阳
+				<input type="radio" name="answer3" value="C"/>C. 亚历山大港
+				<input type="radio" name="answer3" value="D"/>D. 巴格达<br /><br />
+			<h2 class="question">4.丝绸之路得名于什么？：</h2><br />
+				<input type="radio" name="answer4" value="A"/>A. 丝绸的大量贸易
+				<input type="radio" name="answer4" value="B"/>B. 黄金的流通
+				<input type="radio" name="answer4" value="C"/>C. 香料的传播
+				<input type="radio" name="answer4" value="D"/>D. 茶叶的贸易<br /><br />
+			<h2 class="question">5.丝绸之路的哪一段被称为“草原丝绸之路”？：</h2><br />
+				<input type="radio" name="answer5" value="A"/>A. 从中国长安到中亚的陆路
+				<input type="radio" name="answer5" value="B"/>B. 穿越蒙古高原和欧亚草原的路线
+				<input type="radio" name="answer5" value="C"/>C. 从中国广州到印度的海上航线
+				<input type="radio" name="answer5" value="D"/>D. 从地中海到印度的海上航线<br /><br />
+			<h2 class="question">6.丝绸之路上的哪个城市被誉为“东方的罗马”？：</h2><br />
+				<input type="radio" name="answer6" value="A"/>A. 长安（今西安）
+				<input type="radio" name="answer6" value="B"/>B. 洛阳
+				<input type="radio" name="answer6" value="C"/>C. 撒马尔罕
+				<input type="radio" name="answer6" value="D"/>D. 巴比伦<br /><br />
+			<h2 class="question">7.下列哪位历史人物与丝绸之路的开辟和扩展有直接关系？：</h2><br />
+				<input type="radio" name="answer7" value="A"/>A. 张骞
+				<input type="radio" name="answer7" value="B"/>B. 玄奘
+				<input type="radio" name="answer7" value="C"/>C. 鉴真
+				<input type="radio" name="answer7" value="D"/>D. 郑和<br /><br />
+			<h2 class="question">8.丝绸之路上的哪种商品在东西方贸易中占据了重要地位？：</h2><br />
+				<input type="radio" name="answer8" value="A"/>A. 丝绸
+				<input type="radio" name="answer8" value="B"/>B. 瓷器
+				<input type="radio" name="answer8" value="C"/>C. 茶叶
+				<input type="radio" name="answer8" value="D"/>D. 香料<br /><br />
 			<div style="text-align: center;">  
 			<button type="button" onclick="submitForm()">提交</button>
 			<p id="score" style="color: white; font-size: 20px;">分数: 0/8</p>
@@ -86,7 +97,7 @@
 			
 		
 		   <script>
-		        const correctAnswers = ['B', 'A', 'C', 'D', 'A', 'B', 'C', 'D'];
+		        const correctAnswers = ['B', 'B', 'C', 'A', 'B', 'C', 'A', 'A'];
 		        const scoreImages = [
 		            'res/score0.png',  // 0分图片
 		            'res/score1-4.png', // 1-4分图片
