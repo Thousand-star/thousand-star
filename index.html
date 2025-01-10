@@ -35,6 +35,15 @@
 		    #scoreImage img:hover {
 		        transform: scale(1.2); 
 		    }
+			#submitBtn {
+			    transition: transform 0.2s, background-color 0.2s;
+			}
+			 
+			#submitBtn:active {
+			    transform: scale(0.95);
+			    background-color: #ff9999; /* 稍微变暗的红色 */
+			}
+			
 		</style>
 		<link rel="stylesheet" href="css/main.css" type="text/css">
 
@@ -89,7 +98,7 @@
 				<input type="radio" name="answer8" value="C"/>C. 茶叶
 				<input type="radio" name="answer8" value="D"/>D. 香料<br /><br />
 			<div style="text-align: center;">  
-			<button type="button" onclick="submitForm()">提交</button>
+			<button type="button" id="submitBtn" onclick="submitForm()">提交</button>
 			<p id="score" style="color: white; font-size: 20px;">分数: 0/8</p>
 			<div id="scoreImage" style="text-align: center;">
 			    <img src="res/11111.png" alt="Score Image" style="display: inline-block; width: 200px; height: 200px; margin: 0 auto;" />
